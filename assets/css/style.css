@@ -710,7 +710,7 @@ body { background: var(--white); }
 .footer-brand .logo { margin-bottom: 20px; }
 
 .logo {
-  width: 350px !important; /* Ancho deseado */
+  width: 450px !important; /* Ancho deseado */
   height: auto !important; /* Altura automática para mantener la proporción */
 }
 
