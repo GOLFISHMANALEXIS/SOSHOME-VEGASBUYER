@@ -104,7 +104,7 @@
 
            
             <li>
-              <a href="#formulario" class="navbar-link" data-nav-link>about us</a>
+              <a href="#formulario" class="navbar-link" data-nav-link>Formulario</a>
             </li>
 
             <li>
@@ -164,7 +164,7 @@
 
           <center>
             <div class="btn-group">
-            <button class="btn btn-primary" href="tour-search">Learn more</button>
+            <button class="btn btn-primary" href="#subir">Formulario</button>
           </div>
           </center>
           
@@ -325,8 +325,38 @@
 
 
       <section class="tour-search">
-        <div class="container">
-
+        <div class="container" id="formulario">
+          <!--
+<center>
+          <form action="https://sheetdb.io/api/v1/onc66a91kpeyr" class="tour-search-form" method="post" id="sheetdb-form">
+            <div class="container">
+                
+                <div class="input-wrapper">
+                    <label for="name" class="input-label">Full name</label>
+                    <input type="text" placeholder="Enter Full Name" name="data[email]" required class="input-field">
+                </div>
+        
+                <div class="input-wrapper">
+                    <label for="email" class="input-label">Email</label>
+                    <input type="text" placeholder="Enter Email" name="data[psw]" required class="input-field">
+                </div>
+        
+                <div class="input-wrapper">
+                    <label for="phone" class="input-label">Phone number</label>
+                    <input type="text" placeholder="Enter Phone Number" name="data[psw repeat]" required class="input-field">
+                </div>
+        
+                <div class="input-wrapper">
+                    <label for="direccion" class="input-label">Property address</label>
+                    <input type="text" placeholder="Enter Property Address" name="data[direccion]" required class="input-field">
+                </div>
+        <br>
+                <button type="submit" class="btn btn-secondary">SUBMIT</button>
+            </div>
+        </form>
+        </center>
+        
+-->
           <form action="" class="tour-search-form" id="formulario">
 
             <div class="input-wrapper">
@@ -435,7 +465,7 @@
                     </p>
                     <p class="slider__author">Steve J. Doe</p>
                     <div class="slider__separator"></div>
-                    <p class="slider__desc">Carson city</p>
+                    <p class="slider__desc">North Vegas</p>
                     <div class="slider__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                             class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 </div>
@@ -690,7 +720,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+          &copy; 2024 <a href="">SOSHOMEVEGASBUYER/a>. All rights reserved
         </p>
 
         <ul class="footer-bottom-list">
@@ -739,7 +769,22 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
- 
+  <script>
+            var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('index.html', '_blank');
+
+          });
+        });
+        </script>
 </body>
 
 </html>
