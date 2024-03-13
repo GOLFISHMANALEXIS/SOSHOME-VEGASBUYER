@@ -557,6 +557,7 @@ body { background: var(--white); }
 .package-card .card-text {
   line-height: 1.6;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .card-meta-list {
@@ -707,6 +708,13 @@ body { background: var(--white); }
 .footer-brand img { width: 180px; }
 
 .footer-brand .logo { margin-bottom: 20px; }
+
+.logo {
+  width: 350px !important; /* Ancho deseado */
+  height: auto !important; /* Altura automática para mantener la proporción */
+}
+
+
 
 .footer-text {
   font-size: var(--fs-5);
