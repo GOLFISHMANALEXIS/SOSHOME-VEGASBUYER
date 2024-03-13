@@ -1545,3 +1545,74 @@ address {
       font-size: 0.875rem;
   }
 }
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+  .container { padding-inline: 10px; }
+  .header .container { padding-inline: 20px; }
+  .header .header-top .container { grid-template-columns: 1fr; }
+  .header .header-btn-group { justify-self: center; }
+  .hero { padding-top: 100px; min-height: 400px; }
+  .tour-search-form { grid-template-columns: 1fr; }
+  .popular-list { grid-template-columns: 1fr; }
+  .gallery-list { grid-template-columns: 1fr; }
+  .footer-top .container { grid-template-columns: 1fr; }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container { padding-inline: 20px; }
+  .header .container { padding-inline: 40px; }
+  .hero { padding-top: 150px; }
+  .tour-search-form { grid-template-columns: repeat(2, 1fr); }
+  .popular-list { grid-template-columns: repeat(2, 1fr); }
+  .gallery-list { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 992px) {
+  .container { padding-inline: 30px; }
+  .header .container { padding-inline: 60px; }
+  .hero { padding-top: 200px; }
+  .tour-search-form { grid-template-columns: repeat(4, 1fr); }
+  .popular-list { grid-template-columns: repeat(3, 1fr); }
+  .gallery-list { grid-template-columns: repeat(3, 1fr); }
+  .footer-top .container { grid-template-columns: repeat(3, 1fr); }
+}
+@media only screen and (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas, como tabletas */
+}
+
+@media only screen and (max-width: 480px) {
+  /* Estilos para pantallas aún más pequeñas, como teléfonos móviles */
+}
+@media only screen and (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas, como tabletas */
+}
+
+@media only screen and (max-width: 480px) {
+  /* Estilos para pantallas aún más pequeñas, como teléfonos móviles */
+}
+
+/* Estilos generales */
+.container {
+  width: 90%; /* Utiliza porcentajes en lugar de valores fijos para los contenedores */
+  max-width: 1200px; /* Establece un ancho máximo para evitar que el contenido se extienda demasiado en pantallas grandes */
+  margin: 0 auto; /* Centra el contenido */
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media only screen and (max-width: 768px) {
+  /* Estilos específicos para pantallas pequeñas (tabletas y móviles) */
+  .container {
+    width: 100%; /* Utiliza todo el ancho disponible en pantallas pequeñas */
+    padding: 0 20px; /* Añade algo de espacio alrededor del contenido */
+  }
+  
+  /* Otros estilos específicos para pantallas pequeñas */
+}
+
+/* Media queries para pantallas aún más pequeñas, como teléfonos móviles en posición vertical */
+@media only screen and (max-width: 480px) {
+  /* Estilos específicos para pantallas muy pequeñas */
+}
